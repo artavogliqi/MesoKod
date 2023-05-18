@@ -1,0 +1,129 @@
+
+body {
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 500;
+    background-color: white;
+    margin-top: 0;
+    
+  }
+/* NAVBAR */
+.navbar {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  .logo-image {
+    width: 230px;
+    height: 80px;
+  }
+  
+  .menu-items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .menu-item:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin: 5px 0;
+  }
+  
+  .submenu a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+  /* BODY */
+
+  /* SECTION 1 */
+  .section-1 {
+    display: flex;
+  }
+  
+  .section-left {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .gif-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .section-right {
+    font-size: larger;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px; /* Adjust the margin value as needed */
+  }
+  
+  
+  .text {
+    margin-left: 20px;
+  }
+
+  .hover-button {
+    background-color: transparent;
+    border: none;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-button:hover {
+    background-color: #D9751E; /* Set the desired color value */
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .stars {
+    color: yellow; /* Set the color to yellow */
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .stars::after {
+    content: "\00a0";
+  }
+
+  
+  .score {
+    margin-left: 5px;
+  }
+  
