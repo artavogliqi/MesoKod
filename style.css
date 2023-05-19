@@ -92,7 +92,7 @@ body {
     margin-left: 20px;
   }
 
-  .hover-button {
+  /* .hover-button {
     background-color: transparent;
     border: none;
     border: 2px solid black;
@@ -104,9 +104,9 @@ body {
   
   .hover-button:hover {
     background-color: #D9751E; /* Set the desired color value */
-  }
+  /* } */
   
-  .rating {
+  /* .rating {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -114,25 +114,32 @@ body {
   
   .stars {
     color: yellow; /* Set the color to yellow */
-    font-size: 24px; /* Adjust the font size as needed */
-  }
+    /* font-size: 24px; Adjust the font size as needed
+  } */
   
-  .stars::after {
+  /* .stars::after {
     content: "\00a0";
   }
 
   
   .score {
     margin-left: 5px;
-  }
+  } */ */ */
 
   /* SLIDER */
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .slider {
-    padding-left: 10px;
+    padding-left: 500px;
     width: 500px;
     height: 300px;
     overflow: hidden;
     position: relative;
+    /* flex: 0 0 70%;
+    max-width: 70%; */
   }
   
   .slide {
@@ -147,7 +154,31 @@ body {
     object-fit: cover;
   }
 
+  .slider-container {
+    flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  }
   
+  
+  .video-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .video {
+    margin-bottom: 20px;
+  }
+  
+  .video video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+    
   
   @keyframes slideAnimation {
     0% {
@@ -172,6 +203,7 @@ body {
     animation: slideAnimation 5s infinite;
   }
   
+  /* FOOTER */
 
   .footer {
     display: flex;
@@ -239,7 +271,7 @@ body {
   .section-right {
     margin-left: 0;
   }
-  
+
   .text {
     margin-left: 0;
   }
@@ -255,6 +287,27 @@ body {
   flex: 1 0 100%;
   margin-bottom: 10px;
 }
+.slider-container {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.video-container {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+}
+
+@media (max-width: 767px) {
+  .slider-container,
+  .video-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .video-container {
+    grid-template-columns: 1fr;
+  }
 }
 
   @media (max-width: 480px) {
@@ -270,6 +323,10 @@ body {
     .slider {
       height: 150px;
     }
+    .video video {
+      max-width: 200px;
+    }
   }
+
 
   
