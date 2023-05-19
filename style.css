@@ -146,6 +146,8 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+  
   
   @keyframes slideAnimation {
     0% {
@@ -170,34 +172,90 @@ body {
     animation: slideAnimation 5s infinite;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .navbar {
-      font-size: 16px;
-    }
-    
-    .logo-image {
-      width: 180px;
-      height: 60px;
-    }
-    
-    .section-left {
-      flex: 0 0 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-    
-    .section-right {
-      margin-left: 0;
-    }
-    
-    .text {
-      margin-left: 0;
-    }
 
-    .slider {
-      height: 200px;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
+  
+  .footer-part {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo-text {
+    margin-top: 10px;
+  }
+  
+  .menu-list,
+  .training-options,
+  .social-media-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .menu-list li,
+  .training-options li,
+  .social-media-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .menu-list li a,
+  .training-options li a,
+  .social-media-links li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    font-size: 16px;
+  }
+  
+  .logo-image {
+    width: 180px;
+    height: 60px;
+  }
+  
+  .section-left {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .section-right {
+    margin-left: 0;
+  }
+  
+  .text {
+    margin-left: 0;
+  }
+
+  .slider {
+    height: 200px;
+}
+.footer {
+  flex-wrap: wrap;
+}
+
+.footer-part {
+  flex: 1 0 100%;
+  margin-bottom: 10px;
+}
+}
 
   @media (max-width: 480px) {
     .navbar {
@@ -213,3 +271,5 @@ body {
       height: 150px;
     }
   }
+
+  
