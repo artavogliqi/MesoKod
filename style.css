@@ -1,12 +1,16 @@
 body {
-    font-family: 'Inconsolata', sans-serif;
-    font-weight: 600;
-    background-color: white;
-    margin-top: 0;
-  }
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 500;
+  background-color: white;
+  margin-top: 0;
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
 
-/* ===============================NAVBAR====================================== */
+/* ===============================HEADER====================================== */
 .navbar {
+  background-color: #CCD2FA;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -18,8 +22,8 @@ body {
     margin-right: 20px;
   }
   .logo-image {
-    width: 230px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
   }
   
   .menu-items ul {
@@ -37,6 +41,9 @@ body {
     text-decoration: none;
     color: #333;
     padding: 5px;
+  }
+  .menu-item a:hover {
+    color: #D9751E;
   }
   
   .submenu {
@@ -61,7 +68,6 @@ body {
     color: #333;
     text-decoration: none;
   }
-
 /* ===============================BODY====================================== */
 /* ===============================SECTION 1====================================== */
 
@@ -93,7 +99,7 @@ body {
     margin-left: 20px;
   }
 
-  /* .hover-button {
+   .hover-button { 
     background-color: transparent;
     border: none;
     border: 2px solid black;
@@ -105,7 +111,7 @@ body {
   
   .hover-button:hover {
     background-color: #D9751E; /* Set the desired color value */
-  /* } */
+  }
   
   /* .rating {
     display: flex;
@@ -127,6 +133,72 @@ body {
     margin-left: 5px;
   } */ */ */
 
+/* ===============================SECTION 2====================================== */
+
+  .section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+  }
+  
+  .section-heading {
+    text-align: center;
+  }
+
+  #spanprof {
+    color: white;
+    background-color: #D9751E;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+
+  .card {
+    flex: 1 1 22%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    }
+  
+  .card img {
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  
   /* ===============================SLIDER====================================== */
 
   .container {
@@ -211,18 +283,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #CCD2FA;
     padding: 20px;
   }
   
+  .footer-titles {
+    font-size: 25px;
+  }
+
+  .menu-list a:hover,
+  .training-options a:hover, 
+  .social-media-links a:hover{
+    color: #D9751E;
+  }
   .footer-part {
     flex: 1;
     text-align: center;
   }
   
   .logo {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 100px;
   }
   
   .logo-text {
@@ -234,14 +315,21 @@ body {
   .social-media-links {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
-  
+  .social-media-links {
+    font-size: 25px;
+  }
+
   .menu-list li,
   .training-options li,
   .social-media-links li {
     display: inline;
     margin-right: 10px;
+    margin-top: 5px;
   }
   
   .menu-list li a,
