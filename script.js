@@ -22,10 +22,10 @@ const head = `
   <li class="menu-item">
     <a href="#">Trajnimet</a>
     <ul class="submenu">
-      <li><a href="#">JAVA</a></li>
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">PYTHON</a></li>
-      <li><a href="#">C#</a></li>
+      <li><a href="java.html">JAVA</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="python.html">PYTHON</a></li>
+      <li><a href="c.html">C#</a></li>
     </ul>
     
   </li>
@@ -47,10 +47,10 @@ const footer = `
       <div class="footer-part menu-part">
         <h3 class="footer-titles">Menu</h3>
         <ul class="menu-list">
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contactus.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-part training-part">
