@@ -23,9 +23,9 @@ const head = `
     <a href="#">Trajnimet</a>
     <ul class="submenu">
       <li><a href="java-python.html">JAVA</a></li>
-      <li><a href="html.html">HTML</a></li>
+      <li><a href="html-c.html">HTML</a></li>
       <li><a href="java-python.html">PYTHON</a></li>
-      <li><a href="c.html">C#</a></li>
+      <li><a href="html-c.html">C#</a></li>
     </ul>
     
   </li>
@@ -58,8 +58,8 @@ const footer = `
         <ul class="training-options">
           <li><a href="java-python.html">Java</a></li>
           <li><a href="java-python.html">Python</a></li>
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">C#</a></li>
+          <li><a href="html-c.html">HTML</a></li>
+          <li><a href="html-c.html">C#</a></li>
         </ul>
       </div>
       <div class="footer-part findus-part">
