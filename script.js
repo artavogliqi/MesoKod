@@ -18,7 +18,7 @@ const head = `
 <div class="menu-items">
 <ul>
   <li class="menu-item"><a href="index.html">Ballina</a></li>
-  <li class="menu-item"><a href="#">Rreth nesh</a></li>
+  <li class="menu-item"><a href="aboutus.html">Rreth nesh</a></li>
   <li class="menu-item">
     <a href="#">Trajnimet</a>
     <ul class="submenu">
