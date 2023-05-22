@@ -97,15 +97,18 @@ body {
   
   .text {
     margin-left: 20px;
+    font-size: 20px;
   }
 
    .hover-button { 
+    margin-left: 50px;
+    margin-top: 15px;
     background-color: transparent;
-    border: none;
     border: 2px solid black;
+    border-radius: 5px;
     cursor: pointer;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 0.3s ease;
   }
   
@@ -138,10 +141,8 @@ body {
   .section-2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px; 
-    margin-right: 20px; 
+    margin: 50px 20px;
+    padding: 30px;
   }
   
   .section-heading {
@@ -158,10 +159,10 @@ body {
   .card {
     flex: 1 1 22%;
     background-color: #f2f2f2;
-    border-radius: 10px;
     padding: 20px;
     text-align: center;
     margin: 10px;
+    border-radius: 20px;
     }
   
   .card img {
@@ -273,14 +274,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin: 0 30px;
 }
 
 .course-card {
+  height: 330px;
   margin: 20px;
   padding: 20px;
   background-color: #f2f2f2;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .course-image {
@@ -337,6 +340,7 @@ body {
     
     .logo-text {
     margin-top: 10px;
+    padding: 0 30px;
     }
     
     .menu-list,
@@ -352,8 +356,13 @@ body {
     }
     
     .social-media-links {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 50px; 
     }
+    .training-options {
+      font-size: 20px;
+      padding: 0 50px; 
+      }
     
     .menu-list li,
     .training-options li,
