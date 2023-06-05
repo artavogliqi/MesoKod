@@ -8,7 +8,8 @@ function showSlide() {
   slides[currentSlide].classList.add('active');
 }
 
-setInterval(showSlide, 500);
+setInterval(showSlide, 3000);
+
 
 // ================================= HEADER =================================
 const head = `
@@ -47,10 +48,10 @@ const footer = `
       <div class="footer-part menu-part">
         <h3 class="footer-titles">Menu</h3>
         <ul class="menu-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="index.html">Ballina</a></li>
+          <li><a href="aboutus.html">Rreth Nesh</a></li>
+          <li><a href="#">Trajnimet</a></li>
+          <li><a href="contactus.html">Kontakti</a></li>
         </ul>
       </div>
       <div class="footer-part training-part">
@@ -63,7 +64,7 @@ const footer = `
         </ul>
       </div>
       <div class="footer-part findus-part">
-        <h3 class="footer-titles">Find us</h3>
+        <h3 class="footer-titles">Na gjeni</h3>
         <ul class="social-media-links">
           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
           <li><a href="#"><i class="fab fa-twitter"></i></a></li>

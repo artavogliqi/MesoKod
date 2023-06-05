@@ -152,7 +152,7 @@ body {
   #spanprof {
     color: white;
     background-color: #D9751E;
-    padding: 0 10px;
+    padding: 5px 10px;
     border-radius: 10px;
   }
 
@@ -267,7 +267,13 @@ body {
 }
 
 .section-3 .section-heading {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+#spancourse{
+  color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .course-container {
@@ -280,14 +286,14 @@ body {
 .course-card {
   height: 330px;
   margin: 20px;
-  padding: 20px;
+  padding: 30px;
   background-color: #f2f2f2;
   border-radius: 20px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .course-image {
-  width: 200px;
+  width: 150px;
   height: 150px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -299,7 +305,7 @@ body {
   color: #fff;
   background-color: #333;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
 }
@@ -359,10 +365,15 @@ body {
     font-size: 20px;
     padding: 0 50px; 
     }
+
     .training-options {
       font-size: 20px;
       padding: 0 50px; 
       }
+
+    .menu-list {
+    /* padding: 0 40px;  */
+    }
     
     .menu-list li,
     .training-options li,
