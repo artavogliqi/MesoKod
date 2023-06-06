@@ -61,12 +61,14 @@
     .right-div button {
       
       margin-left: 280px;
-      background-color: transparent;
+      background-color: #6d7ff6;
+      color: white;
+      border: 1px solid #6d7ff6;
       border-radius: 5px;
-      border: 2px solid black;
       cursor: pointer;
-      padding: 10px 20px;
-      font-size: 16px;
+      padding: 10px 30px;
+      font-size: 20px;
+      /* font-weight: bold; */
       transition: background-color 0.3s ease;
     }
 
@@ -98,18 +100,19 @@
         <img src="images/gifcontactus.gif" alt="Contact Image">
       </div>
       <div class="right-div">
-        <h2>Contact Us</h2>
+        <h2>Na kontaktoni!</h2>
+        <!-- <p style="text-align: center;">Na kontaktoni për çdo pyetje, këshillë, apo kritikë.</p> -->
         <form>
-          <label for="name">Name:</label>
+          <label for="namesurname">Emri dhe Mbiemri:</label>
           <input type="text" id="name" name="name" required>
   
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
   
-          <label for="message">Message:</label>
+          <label for="message">Mesazhi:</label>
           <textarea id="message" name="message" required></textarea>
   
-          <button type="submit" id="butoni">Submit</button>
+          <button type="submit" id="butoni">Dërgo</button>
         </form>
       </div>
     </div>

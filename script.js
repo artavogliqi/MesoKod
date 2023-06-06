@@ -42,8 +42,8 @@ window.addEventListener('DOMContentLoaded', () => {
 // ================================= FOOTER =================================
 const footer = `
 <div class="footer-part logo-part">
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <p class="logo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam, expedita at aut hic consectetur!</p>
+       <img src="images/logo.png" alt="Logo" class="logo">
+        <p class="logo-text">Shkollë digjitale e cila qëllim kryesor ka edukimin dhe motivimin e të rinjve të qasen në botën e programimit!</p>
       </div>
       <div class="footer-part menu-part">
         <h3 class="footer-titles">Menu</h3>

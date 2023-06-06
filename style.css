@@ -10,7 +10,9 @@ body {
 
 /* ===============================HEADER====================================== */
 .navbar {
-  background-color: #CCD2FA;
+    background-color: #CCD2FA;
+    /* background-image: linear-gradient(to right, #CCD2FA 10%, #ffffff ); */
+    background-color: ;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -99,6 +101,13 @@ body {
     margin-left: 20px;
     font-size: 20px;
   }
+  #spankodim {
+    color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
+    /* letter-spacing: 5px; */
+  }
 
    .hover-button { 
     margin-left: 50px;
@@ -141,11 +150,11 @@ body {
   .section-2 {
     display: flex;
     justify-content: space-between;
-    margin: 50px 20px;
+    margin: 10px 20px;
     padding: 30px;
   }
   
-  .section-heading {
+  .section-heading-professors{
     text-align: center;
   }
 
@@ -266,14 +275,14 @@ body {
   background-color: #fff;
 }
 
-.section-3 .section-heading {
-  margin-bottom: 20px;
+.section-heading-training{
+  font-size: 2em;
 }
 #spancourse{
   color: white;
-    background-color: #D9751E;
-    padding: 5px 10px;
-    border-radius: 10px;
+  background-color: #D9751E;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .course-container {
@@ -281,12 +290,18 @@ body {
   justify-content: center;
   align-items: flex-start;
   margin: 0 30px;
+  max-height: fit-content;
+}
+.training-description {
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .course-card {
+  /* width: 250px; */
   height: 330px;
   margin: 20px;
-  padding: 30px;
+  padding: 40px;
   background-color: #f2f2f2;
   border-radius: 20px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
@@ -308,10 +323,11 @@ body {
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s;
+  font-weight: lighter;
 }
 
 .course-button:hover {
-  background-color: #666;
+  background-color: #D9751E;
 }
   
   /* ===============================FOOTER====================================== */
@@ -340,13 +356,17 @@ body {
     }
     
     .logo {
+    margin-right: 70px;
     width: 200px;
     height: 100px;
     }
     
     .logo-text {
+    /* width: 270px; */
     margin-top: 10px;
     padding: 0 30px;
+    text-align: left;
+    /* font-weight: bold; */
     }
     
     .menu-list,
