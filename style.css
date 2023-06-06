@@ -12,7 +12,6 @@ body {
 .navbar {
     background-color: #CCD2FA;
     /* background-image: linear-gradient(to right, #CCD2FA 10%, #ffffff ); */
-    background-color: ;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -101,7 +100,7 @@ body {
     margin-left: 20px;
     font-size: 20px;
   }
-  #spankodim {
+  #kodim {
     color: white;
     background-color: #D9751E;
     padding: 5px 10px;
@@ -146,68 +145,47 @@ body {
   } */ 
 
 /* ===============================SECTION 2====================================== */
+.quote-section {
+  position: relative;
+  height: 370px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
 
-  .section-2 {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 20px;
-    padding: 30px;
-  }
-  
-  .section-heading-professors{
-    text-align: center;
-  }
+.gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/codingbg.gif');
+  /* border-radius: 300px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+}
 
-  #spanprof {
-    color: white;
-    background-color: #D9751E;
-    padding: 5px 10px;
-    border-radius: 10px;
-  }
+.quote-container {
+  text-transform: ;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 100px;
+  /* font-style: italic; */
+}
 
-  .card {
-    flex: 1 1 22%;
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 20px;
-    }
-  
-  .card img {
-    width: 150px;
-    height: 170px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  .card h2 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .social-icons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  
+.quote-container h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.quote-container p {
+  font-size: 20px;
+}
+
+/* =================== */
   
   /* ===============================SLIDER====================================== */
 
@@ -278,7 +256,7 @@ body {
 .section-heading-training{
   font-size: 2em;
 }
-#spancourse{
+#trajnim{
   color: white;
   background-color: #D9751E;
   padding: 5px 10px;

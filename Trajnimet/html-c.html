@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & C#</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: flex;
+    }
+
+    .left-div,
+    .right-div {
+      margin: 20px;
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    .left-div {
+      background-color: #c5d3bf;
+    }
+
+    .right-div {
+      background-color: #ecf0e1;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333333;
+      text-align: center;
+    }
+
+    .media-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .media-container img {
+      max-height: 100%;
+      max-width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    p {
+      color: #555555;
+      text-align: justify;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #337ab7;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .link-button:hover {
+      background-color: #23527c;
+    }
+
+    @media screen and (max-width: 768px) {
+      .left-div,
+      .right-div {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="header navbar navbar-inverse navbar-fixed-top" id="header" role="headerbar"></div>
+  <div class="container">
+    <div class="left-div">
+      <h1>C#</h1>
+      <div class="media-container">
+        <img src="images/c-logo.jpg" alt="C# Logo">
+      </div>
+      <div class="video-container">
+        <iframe src="https://youtu.be/bXzTXD_OJo0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="media-container">
+        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noopener noreferrer">
+          <img src="csharp-website.png" alt="C# Website">
+        </a>
+      </div>
+      <p>
+        C# is a modern, versatile programming language developed by Microsoft. It is widely used for developing Windows applications, web services, and game development using Unity. C# provides strong typing, object-oriented programming features, and seamless integration with the .NET framework.
+      </p>
+      <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" class="link-button" target="_blank" rel="noopener noreferrer">Mëso më shumë rreth C#</a>
+    </div>
+    <div class="right-div">
+      <h1>HTML, CSS & JS</h1>
+      <div class="media-container">
+        <img src="images/html-placeholder.jpg" alt="Web Development Logo">
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/QA0XpGhiz5w" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="media-container">
+        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">
+          <img src="web-dev-website.png" alt="Web Development Website">
+        </a>
+      </div>
+      <p>
+        Web development involves building websites and web applications using HTML, CSS, and JavaScript. HTML provides the structure, CSS adds visual styling, and JavaScript adds interactivity and dynamic behavior. Web development skills are essential for creating responsive and engaging websites.
+      </p>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn" class="link-button" target="_blank" rel="noopener noreferrer">Mëso më shumë rreth Web Development</a>
+    </div>
+  </div>
+  <div class="footer" id="footer" role="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
