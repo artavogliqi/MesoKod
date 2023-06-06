@@ -63,6 +63,116 @@
     .button:hover {
       background-color: #D9751E; 
     }
+
+    /* ===============================SECTION PROFESORAT====================================== */
+
+  .section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+    padding: 30px;
+  }
+  
+  .section-heading {
+    text-align: center;
+  }
+
+  #spanprof {
+    color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .card {
+    flex: 1 1 22%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    }
+  
+  .card img {
+    width: 150px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  /* SECTION KARAKTERISTIKAT */
+  .karakteristikat {
+  padding: 30px;
+}
+#titulli-karakteristikat{
+  font-size: 30px;
+}
+#karakteristikat {
+    color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  width: 46.5%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #e5e8fb;
+  border-radius: 30px;
+}
+
+.feature h3 {
+  color: #000000;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .feature {
+    width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -81,10 +191,103 @@
        <br> 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum fuga sequi, voluptatum quisquam iusto ab earum nobis necessitatibus quibusdam blanditiis nisi. Quidem officia explicabo vitae sequi excepturi veritatis doloremque fugiat!</p>
         <br>
-        <a href="#" class="button">Learn More</a>
     </div>
     </div>
   </div>
+
+  <!--==================== SECTION 2 ==================== -->
+<h1 class="section-heading">Profesoret tanë <br> <br> Tako <span id="spanprof">Profesorët</span> tanë!</h1>
+<div class="section-2">
+
+  <div class="card">
+    <img src="images/prof1.jpeg" alt="Professor 1">
+    <h2>Shpat Bekteshi</h2>
+    <p>Themelues/Ligjërues</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.linkedin.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:your-email@example.com" target="_blank">
+        <img src="images/social media logos/gmail.png" alt="Email">
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/prof1.jpeg" alt="Professor 2">
+    <h2>Jane Smith</h2>
+    <p>Ligjëruese</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.linkedin.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:your-email@example.com" target="_blank">
+        <img src="images/social media logos/gmail.png" alt="Email">
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/prof1.jpeg" alt="Professor 3">
+    <h2>David Johnson</h2>
+    <p>Ligjëruese</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.linkedin.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:your-email@example.com" target="_blank">
+        <img src="images/social media logos/gmail.png" alt="Email">
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="images/prof1.jpeg" alt="Professor 4">
+    <h2>Emily Brown</h2>
+    <p>Ligjëruese</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.linkedin.com/your-profile-url" target="_blank">
+        <img src="images/social media logos/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="mailto:your-email@example.com" target="_blank">
+        <img src="images/social media logos/gmail.png" alt="Email">
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION KARAKTERISTIKAT -->
+<div class="karakteristikat">
+  <h2 id="titulli-karakteristikat"><span id="karakteristikat">Karakteristikat</span> dalluese të platformes tonë</h2>
+  <div class="section">
+    <div class="feature">
+      <h3>Kurse të strukturuara dhe të avancuara</h3>
+      <p>Ne ofrojmë kurse të kodimit të strukturuara dhe të përshtatshme për të gjitha nivelet e përvojës. Nisur nga themelet e gjuhëve programuese bazë deri te projekte të avancuara, nxënësit tanë kanë mundësinë të zhvillojnë njohuri të qëndrueshme dhe të ndërtojnë aplikacione funksionale.</p>
+    </div>
+    <div class="feature">
+      <h3>Mësimdhënie nga profesionistë të përvojës</h3>
+      <p>rajnerët tanë janë profesionistë të kodimit me përvojë të pasur në industrinë e IT-së. Ata ndajnë njohuritë dhe praktikat e tyre me pasion dhe përkushtim, duke krijuar një mjedis të frytshëm për nxënien dhe zhvillimin e aftësive teknike.</p>
+    </div>
+    <div class="feature">
+      <h3>Projekte praktike dhe aplikative</h3>
+      <p>Ne fokusohemi në mësimin e kodimit nëpërmjet projekteve praktike dhe aplikative. Nxënësit kanë mundësinë të ndërtojnë aplikacione të vërteta, të zhvillojnë faqe interneti funksionale dhe të eksplorojnë teknologjitë e reja, duke iu përgatitur për sfidat e vërteta në botën e punës.</p>
+    </div>
+    <div class="feature">
+      <h3>Bashkëpunim dhe mbështetje komunitare</h3>
+      <p>Ne inkurajojmë bashkëpunimin dhe mbështetjen e nxënësve në platformën tonë. Përmes forumit të diskutimeve dhe grupit të komunitetit, nxënësit kanë mundësinë të ndajnë idetë, të zgjidhin sfidat bashkërisht dhe të krijojnë një rrjetë të fortë të kontakteve në industrinë e kodimit.</p>
+    </div>
+  </div>
+</div>
+
   <div class="footer" id="footer" role="footer"></div>
 
   <script src="script.js"></script>
