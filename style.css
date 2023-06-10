@@ -307,6 +307,46 @@ body {
 .course-button:hover {
   background-color: #D9751E;
 }
+
+/* SECITON 4 */
+
+#titulli-kompanite{
+  font-size: 30px;
+  text-align: center;
+}
+
+#kompanite {
+    color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+.image-section {
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+}
+
+.image-row img {
+  width: 300px;
+  height: 200px;
+  /* margin: 10px; */
+  /* border: 2px solid black; */
+  /* border-radius: 50%; */
+}
+
   
   /* ===============================FOOTER====================================== */
 
