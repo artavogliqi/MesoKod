@@ -167,7 +167,6 @@ body {
 }
 
 .quote-container {
-  text-transform: ;
   position: relative;
   z-index: 1;
   text-align: center;
@@ -409,9 +408,9 @@ body {
       padding: 0 50px; 
       }
 
-    .menu-list {
-    /* padding: 0 40px;  */
-    }
+    /* .menu-list {
+     padding: 0 40px;
+    } */
     
     .menu-list li,
     .training-options li,
