@@ -11,136 +11,135 @@
     crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
     <style>
-
-.container {
-      max-width: 1300px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #ffffff;
-      display: flex;
-    }
-
-    .left-div {
-      flex: 1;
-      margin-right: 20px; /* Added margin right for space */
-    }
-
-    .left-div img {
-      max-width: 100%;
-      height: 500px;
-      width: 550px;
-    }
-
-    .right-div {
-      flex: 1;
-      background-color: #ffffff;
-    }
-
-    .right-div h2 {
-      font-size: 30px;
-      text-align: center;
-    }
-
-    .right-div label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    .right-div input,
-    .right-div textarea {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    .right-div textarea {
-      height: 150px;
-    }
-
-    #butoni {
-      margin-left: 260px;
-      padding: 15px 35px;
-      border: unset;
-      border-radius: 10px;
-      color: #212121;
-      z-index: 1;
-      background: #ccd2fa79;
-      position: relative;
-      font-weight: bold;
-      font-size: 17px;
-      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-      transition: all 250ms;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    #butoni::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 0;
-      border-radius: 10px;
-      background-color: #D9751E;
-      z-index: -1;
-      -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-      box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-      transition: all 350ms
-    }
-
-    #butoni:hover {
-      color: #e8e8e8;
-    }
-
-    #butoni:hover::before {
-      width: 100%;
-    }
-    
-    @media (max-width: 768px) {
       .container {
-        flex-direction: column;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
       }
-
+    
       .left-div {
-        margin-right: 0;
+        position: relative;
+        margin-right: 20px; 
+      }
+    
+      .left-div .pixi-container {
+        width: 100%;
+        height: 500px;
+      }
+    
+      .right-div {
+        flex: 1;
+        background-color: #ffffff;
+      }
+    
+      .right-div h2 {
+        font-size: 30px;
+        text-align: center;
+      }
+    
+      .right-div label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    
+      .right-div input,
+      .right-div textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
         margin-bottom: 20px;
       }
-
-      .right-div {
-        margin-left: 0;
+    
+      .right-div textarea {
+        height: 150px;
       }
-      .left-div img {
-        height: auto;
-        width: 100%;
-      }
-
+    
       #butoni {
         margin-left: auto;
         margin-right: auto;
+        padding: 15px 35px;
+        border: unset;
+        border-radius: 10px;
+        color: #212121;
+        z-index: 1;
+        background: #ccd2fa79;
+        position: relative;
+        font-weight: bold;
+        font-size: 17px;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms;
+        overflow: hidden;
+        cursor: pointer;
       }
-    }
-
-    @media (min-width: 1200px) {
-      .container {
-        max-width: 1000px;
+    
+      #butoni::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 10px;
+        background-color: #D9751E;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 350ms
       }
-
-      .right-div {
-        padding-left: 20px;
-        padding-right: 20px;
+    
+      #butoni:hover {
+        color: #e8e8e8;
       }
-    }
+    
+      #butoni:hover::before {
+        width: 100%;
+      }
+    
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+    
+        .left-div {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+    
+        .right-div {
+          margin-left: 0;
+        }
+    
+        .left-div .pixi-container {
+          height: auto;
+        }
+    
+        #butoni {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1000px;
+        }
+    
+        .right-div {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="header navbar navbar-inverse navbar-fixed-top" id="header" role="headerbar"></div>
-
+  
     <div class="container">
       <div class="left-div">
-        <img src="images/gifcontactus.gif" alt="Contact Image">
+        <div class="pixi-container"></div>
       </div>
       <div class="right-div">
         <h2>Na kontaktoni!</h2>
@@ -159,8 +158,51 @@
         </form>
       </div>
     </div>
-
+  
     <div class="footer" id="footer" role="footer"></div>
+    <script src="https://pixijs.download/v5.3.3/pixi.min.js"></script>
+    <script>
+      
+      window.addEventListener('DOMContentLoaded', (event) => {
+        
+        const app = new PIXI.Application({
+          width: 550, 
+          height: 500, 
+          backgroundColor: 0xffffff, 
+        });
+    
+        const container = document.querySelector('.left-div .pixi-container');
+        container.appendChild(app.view);
+    
+        
+        const sprite1 = PIXI.Sprite.from('images/gifcontactus.gif');
+        sprite1.anchor.set(0.5);
+        sprite1.position.set(app.screen.width / 2, app.screen.height / 2);
+        sprite1.scale.set(1);
+        app.stage.addChild(sprite1);
+    
+        const sprite2 = PIXI.Sprite.from('images/.gif');
+        sprite2.anchor.set(0.5);
+        sprite2.position.set(app.screen.width / 2, app.screen.height / 2);
+        sprite2.scale.set(0.8);
+        app.stage.addChild(sprite2);
+    
+        
+        app.ticker.add(() => {
+          
+      sprite1.rotation += 0.01; 
+
+      sprite2.scale.x += 0.01; 
+      sprite2.scale.y += 0.01; 
+
+      if (sprite2.scale.x >= 1.2) {
+        
+        sprite2.scale.set(0.8);
+          }
+        });
+      });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
+
