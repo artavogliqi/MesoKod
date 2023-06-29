@@ -124,6 +124,7 @@
 
 #titulli-karakteristikat{
   font-size: 30px;
+  /* margin-bottom: 30px; */
 }
 #karakteristikat {
     color: white;
@@ -164,8 +165,180 @@
   line-height: 1.5;
   text-align: left;
 }
+/* SECTION STUDENTS KOMENTET */
+#titulli-komentet{
+  font-size: 30px;
+  text-align: center;
 
+  /* margin-bottom: 30px; */
+}
+#studentëve {
+    color: white;
+    background-color: #D9751E;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
 
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  /* --text-gray: hsl(0, 0%, 30%); */
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.komenti {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 15px;
+  /* padding: 24px; */
+  /* flex-wrap: wrap; */
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  /* border: solid 1px;
+  border-radius: 50px; */
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 50px;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emrimbiemri {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.profesioni-studentit {
+  color: hsl(0, 0%, 60%);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .profesioni-studentit {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .profesioni-studentit {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .profesioni-studentit {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .profesioni-studentit {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .profesioni-studentit {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+/* ============== */
 @media only screen and (max-width: 768px) {
       .container {
         padding: 10px;
@@ -362,7 +535,72 @@
     </div>
   </div>
 </div>
-
+<!-- SECTION STUDENTS KOMENTET -->
+<h2 id="titulli-komentet">Komentet e <span id="studentëve">studentëve</span> tanë</h2>
+<div class="wrap">
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student1.jpg" alt="Student 1">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Arlind Luzha</h3>
+        <p class="profesioni-studentit">Software developer</p>
+      </div>
+      <p class="komenti">"MËSO KOD është platforma më e mirë për të mësuar kodim në gjuhën shqipe. Një burim i shkëlqyer për të filluar aventurën në botën e programimit."</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student2.jpg" alt="Student 2">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Ela Rexha</h3>
+        <p class="profesioni-studentit">Web Developer</p>
+      </div>
+      <p class="komenti">"Mësova shumë nëpërmjet platformës MËSO KOD. Mësimet janë të lehta për të ndjekur dhe ndihmuan në zhvillimin tim si programues."</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student3.jpg" alt="Student 3">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Nora Nika</h3>
+        <p class="profesioni-studentit">Database Engineer</p>
+      </div>
+      <p class="komenti">"Kam gjetur MËSO KOD të shumë ndihmës për të përparuar në kodim. Platforma ofron një përmbajtje të gjërë dhe praktike që lejon zhvillimin e projekteve të vërteta."</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student4.jpg" alt="Student 4">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Alba Jaha</h3>
+        <p class="profesioni-studentit">Web Developer</p>
+      </div>
+      <p class="komenti">"MËSO KOD është një platformë e organizuar mirë me kurse cilësore. Me ndihmën e saj, arrita të përshpejtoj shkathtësitë time në programim."</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student5.jpg" alt="Student 5">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Dardan Ahmeti</h3>
+        <p class="profesioni-studentit">Software Developer</p>
+      </div>
+      <p class="komenti">"Platforma MËSO KOD ofron mësime të strukturuara dhe të shpjeguara mirë për të gjitha nivelet e përvojës. Burim i shkëlqyeshëm për të zgjeruar njohuritë në kodim."</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-top">
+      <img class="box-image" src="images/students/student6.jpg" alt="Student 6">
+      <div class="title-flex">
+        <h3 class="emrimbiemri">Valon Gashi</h3>
+        <p class="profesioni-studentit">Data Scientist</p>
+      </div>
+      <p class="komenti">"Rekomandoj MËSO KOD për të gjithë ata që duan të fillojnë ose të thellojnë njohuritë e tyre në programim. Platformë e përshtatshme dhe efektive."</p>
+    </div>
+  </div>
+  
+</div>
+  
   <div class="footer" id="footer" role="footer"></div>
 
   <script src="script.js"></script>
