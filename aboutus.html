@@ -72,7 +72,7 @@
 
   .card {
     flex: 1 1 22%;
-    background-color: #f2f2f2;
+    background-color: hsla(240, 100%, 97%, 0.696);
     padding: 20px;
     text-align: center;
     margin: 10px;
@@ -191,7 +191,7 @@
 
 h3 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 p {
@@ -212,24 +212,23 @@ a {
 
 .wrap {
   display: flex;
-  justify: space-between;
-  align-items: stretch;
-  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
-  /* padding: 24px; */
-  /* flex-wrap: wrap; */
+  padding: 10px;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-bottom: 30px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  max-width: 100%;
   position: relative;
   padding: 20px;
-  background: #fff;
+  background: hsla(240, 100%, 97%, 0.696);
+  border-radius: 50px;
   /* border: solid 1px;
   border-radius: 50px; */
 }
@@ -247,7 +246,7 @@ a {
   height: 250px;
   object-fit: cover;
   object-position: 50% 20%;
-  border-radius: 50px;
+  border-radius: 1000px;
 }
 
 .title-flex {
@@ -274,6 +273,7 @@ a {
     justify-content: flex-start;
     align-items: start;
   }
+
   .profesioni-studentit {
     margin-top: 6px;
   }
@@ -286,6 +286,7 @@ a {
     justify-content: space-between;
     align-items: start;
   }
+
   .profesioni-studentit {
     margin-top: 6px;
   }
@@ -294,13 +295,16 @@ a {
 @media (min-width: 640px) {
   .box {
     flex-basis: calc(50% - 12px);
+    max-width: calc(50% - 12px);
   }
+
   .title-flex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
   }
+
   .profesioni-studentit {
     margin-top: 6px;
   }
@@ -313,6 +317,7 @@ a {
     justify-content: space-between;
     align-items: start;
   }
+
   .profesioni-studentit {
     margin-top: 6px;
   }
@@ -321,13 +326,16 @@ a {
 @media (min-width: 1024px) {
   .box {
     flex-basis: calc(33.3% - 16px);
+    max-width: calc(33.3% - 16px);
   }
+
   .title-flex {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
   }
+
   .profesioni-studentit {
     margin-top: 6px;
   }
@@ -336,90 +344,92 @@ a {
 @media (min-width: 1100px) {
   .box {
     flex-basis: calc(25% - 18px);
+    max-width: calc(25% - 18px);
   }
 }
-/* ============== */
+
 @media only screen and (max-width: 768px) {
-      .container {
-        padding: 10px;
-      }
-      .feature {
+  .container {
+    padding: 10px;
+  }
+
+  .feature {
     width: 100%;
   }
 
-      .content {
-        flex-direction: column;
-      }
+  .content {
+    flex-direction: column;
+  }
 
-      .content img {
-        width: 300px;
-        height: 220px;
-        margin: 0;
-        margin-bottom: 20px;
-      }
+  .content img {
+    width: 300px;
+    height: 220px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 
-      .right-div {
-        margin: 0;
-      }
+  .right-div {
+    margin: 0;
+  }
 
-      h1 {
-        font-size: 24px;
-        margin-bottom: 30px;
-      }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 
-      .aboutus-p {
-        text-align: center;
-      }
+  .aboutus-p {
+    text-align: center;
+  }
 
-      .section-2 {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+  .section-2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-      .card {
-        flex: 1 1 45%;
-        margin: 10px 0;
-      }
+  .card {
+    flex: 1 1 45%;
+    margin: 10px 0;
+  }
 
-      .karakteristikat {
-        padding: 20px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-      }
-    }
+  .karakteristikat {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
 
+@media only screen and (min-width: 1200px) {
+  .container {
+    padding: 50px;
+  }
 
-    @media only screen and (min-width: 1200px) {
-      .container {
-        padding: 50px;
-      }
+  .content img {
+    width: 650px;
+    height: 470px;
+  }
 
-      .content img {
-        width: 650px;
-        height: 470px;
-      }
+  .right-div {
+    margin-left: 70px;
+  }
 
-      .right-div {
-        margin-left: 70px;
-      }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 70px;
+  }
 
-      h1 {
-        font-size: 36px;
-        margin-bottom: 70px;
-      }
+  .aboutus-p {
+    font-size: 20px;
+  }
 
-      .aboutus-p {
-        font-size: 20px;
-      }
+  .section-2 {
+    margin-top: 60px;
+  }
 
-      .section-2 {
-        margin-top: 60px;
-      }
+  .karakteristikat {
+    margin-top: 80px;
+  }
+}
 
-      .karakteristikat {
-        margin-top: 80px;
-      }
-    }
   </style>
 </head>
 
