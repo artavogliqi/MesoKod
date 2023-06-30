@@ -92,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 200px; 
+    margin-left: 150px;
   }
   
   
@@ -322,7 +322,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
-  background-color: #333;
+  background-color: #2d3a8ad9;
   border: none;
   border-radius: 5px;
   text-decoration: none;

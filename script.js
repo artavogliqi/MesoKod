@@ -14,7 +14,7 @@ setInterval(showSlide, 3000);
 // ================================= HEADER =================================
 const head = `
 <div class="logo">
-<img src="images/logo.png" alt="Logo" class="logo-image">
+<a href="index.html"> <img src="images/logo.png" alt="Logo" class="logo-image"> </a>
 </div>
 <div class="menu-items">
 <ul>
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // ================================= FOOTER =================================
 const footer = `
 <div class="footer-part logo-part">
-       <img src="images/logo.png" alt="Logo" class="logo">
+<a href="index.html">   <img src="images/logo.png" alt="Logo" class="logo"> </a>
         <p class="logo-text">Shkollë digjitale e cila qëllim kryesor ka edukimin dhe motivimin e të rinjve të qasen në botën e programimit!</p>
       </div>
       <div class="footer-part menu-part">
